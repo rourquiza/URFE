@@ -336,8 +336,6 @@ li{
     width: 100%;
 }
 
-
-
 .devicess{
     background-color: #eeeeee;
     grid-area: area2; 
@@ -422,37 +420,22 @@ footer{
 .logoBlanco{
     padding-left: 10%;
 }
-.contacto{
+#contacto{
     width: 100%;
     height: 450px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 380px;
-    grid-template-areas: "area1 area2";
     padding-top: 9%;
-    align-items: top;
-}
-.contactoUno{
-
-}
-.contactoDos{
-    
 }
 
-.contactoTres{
-    padding-left: 44px;
-    padding-right: 44px;
+#contactoTres{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 13px;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 1%;
     background-color: #0a1a36;
     border: solid;
 }
 
-.contacto h3{
+.container h3{
     font-family: 'Montserrat', sans-serif;  
     font-weight: normal;
     text-align:left;
@@ -460,7 +443,7 @@ footer{
     color: black;
 }
 
-.formu{
+#formu{
     font-family: 'Montserrat', sans-serif;  
     font-weight: normal;
     font-size: 13px;

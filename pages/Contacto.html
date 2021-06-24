@@ -8,7 +8,8 @@
     <title>Contacto</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../estilo.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="../estilo.css">
 </head>
 
 <body>
@@ -16,47 +17,56 @@
     <header>
         <div class="headerDiv">
             <div class="logoMenu">
-                <a title="logoazul" href="../index.html"><img src="../images/logoazul.png" alt="logoazul"></a>
+                <img class="logoAzul" src="../images/logoazul.png">
             </div>
             <div class="menuNavegacion">
                 <nav>
                     <ul class="ulMenu">
-                        <li><a href="Nosotros.html">NOSOTROS</a></li>
-                        <li><a href="Servicios.html">SERVICIOS</a></li>
-                        <li><a href="Portfolio.html">PORFOLIO</a></li>
-                        <li><a href="Contacto.html">CONTACTO</a></li>
+                        <li><a href="../Pages/Nosotros.html">NOSOTROS</a></li>
+                        <li><a href="../Pages/Servicios.html">SERVICIOS</a></li>
+                        <li><a href="../Pages/Portfolio.html">PORFOLIO</a></li>
+                        <li><a href="../Pages/Contacto.html">CONTACTO</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="redesSocialesMenu">
-                <img src="../images/instagram.png">
-                <img src="../images/whatsapp.png">
+                <div class="redesMenu">
+                    <img src="../images/instagram.svg">
+                    <img src="../images/whatsapp.svg">
+                </div>
             </div>
+        </div>
     </header>
     <!--Contacto info-->
-    <div class="contacto">
-        <div class="contactoUno">
-            <h3>URFE</h3>
-            <h5>Cel.: +54 9 2901 527725</h5>
-            <h5>E-mail: estudiourfe@gmail.com</h5>
-        </div>
-        <div class="contactoDos">
-            <form>
-                <h3>Consultanos</h3><br>
-                <div class="formu">
-                    <label for="nombreyapellido">Nombre y Apellido</label><br><br>
-                    <input type="text" name="Nombre y Apellido"><br><br>
-                    <label for="email">E-mail</label><br><br>
-                    <input type="email" name="email"><br><br>
-                    <label for="email">Asunto</label><br><br>
-                    <input type="asunto" name="asunto"><br><br>
-                    <label for="textarea">Mensaje</label><br><br>
-                    <textarea name="texto" rows="4" cols="40"></textarea><br><br>
+    <div class="container" id="contacto">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3">
+                <h3>URFE</h3>
+                <h5>Cel.: +54 9 2901 527725</h5>
+                <h5>E-mail: estudiourfe@gmail.com</h5>
+            </div>
+                <div class="col-sm-12 col-lg-6" id="formu">
+                    <h3>Consultanos</h3><br>
+                        <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Nombre y Apellido</label>
+                        <input type="nombre" class="form-control" id=exampleFormControlTextarea1>
+                        </div>
+                            <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                                <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
+                                <input type="nombre" class="form-control" id=exampleFormControlTextarea1>
+                                </div>
+                                    <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                        <div class="mb-3">
+                                        <button type="submit" class="btn btn-primary" id="contactoTres">Enviar</button>
+                                        </div>
                 </div>
-                <div class="">
-                    <a title="botoncontacto" href="#"><button class="contactoTres">Enviar</button></a>
-                </div>
-            </form>
         </div>
     </div>
 
@@ -66,6 +76,7 @@
             <a href="../index.html"><img src="../images/logoblanco.png" alt=""></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 
 </html>
