@@ -90,37 +90,81 @@ nav {
 .iconosBarra {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: " iconosUno iconosDos iconosTres iconosCuatro";
+  grid-template-areas: " Uno Dos Tres Cuatro";
   background-color: #f3f2f2;
   width: 100%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  margin-top: 3%; }
-
-/*
-.iconosBarra {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: #f3f2f2;
   padding-top: 3%;
   padding-bottom: 3%;
   margin-top: 3%;
-}
-*/
-.iconosUno, .iconosDos, .iconosTres, .iconosCuatro {
-  width: 25%;
-  height: 170px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  justify-content: center;
+  justify-items: center; }
+
+.iconosUno {
+  width: 45%;
+  height: 170%;
+  grid-area: Uno; }
+
+.iconosDos {
+  width: 45%;
+  height: 170%;
+  grid-area: Dos; }
+
+.iconosTres {
+  width: 45%;
+  height: 170%;
+  grid-area: Tres; }
+
+.iconosCuatro {
+  width: 45%;
+  height: 170%;
+  grid-area: Cuatro; }
 
 .imagenesIconos {
   width: 50px;
-  margin-bottom: 3px; }
+  padding-bottom: 20px; }
   .imagenesIconos img {
     width: 100%; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .iconosBarra {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    grid-template-areas: " Uno" " Dos"  "Tres" "Cuatro";
+    background-color: #f3f2f2;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 3%;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 40px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .iconosBarra {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-areas: " Uno Dos " "Tres Cuatro";
+    background-color: #f3f2f2;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 3%;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 40px; } }
+
+@media (min-width: 1200px) {
+  .iconosBarra {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: " Uno Dos Tres Cuatro";
+    background-color: #f3f2f2;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 3%;
+    justify-content: center;
+    justify-items: center; } }
 
 /* Muestra de trabajos */
 .trabajos {
@@ -169,7 +213,7 @@ nav {
   width: 100%;
   height: 100%; }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 320px) and (max-width: 767px) {
   #imagesTrabajos {
     display: grid;
     grid-template-columns: repeat(2, 3fr);
@@ -178,13 +222,106 @@ nav {
     row-gap: 10px;
     margin: 20px; } }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  #imagesTrabajos {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-areas: " uno  dos " " tres cuatro" " cinco seis";
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 20px; } }
+
+@media only screen and (min-width: 991px) {
   #imagesTrabajos {
     grid-template-columns: repeat(3, 2fr);
     grid-template-areas: " uno dos tres" "cuatro cinco seis";
     column-gap: 10px;
     row-gap: 10px;
     margin: 20px; } }
+
+/* Servicios ofrecidos web */
+.padre {
+  margin-top: 2%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 380px 380px;
+  grid-template-areas: "area1 area2" "area3 area4"; }
+
+.disWeb {
+  display: grid;
+  grid-area: area1;
+  background-image: url(images/device_01.png);
+  height: 380px;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.disWebDos {
+  width: 100%; }
+
+.devicess {
+  background-color: #eeeeee;
+  grid-area: area2;
+  width: 100%;
+  height: 380px; }
+
+.devicess img {
+  max-width: 100%;
+  max-height: 100%; }
+
+/* Servicios ofrecidos logo */
+.logo {
+  display: grid;
+  grid-area: area4;
+  width: 100%;
+  height: 380px;
+  justify-content: center;
+  align-items: center; }
+
+.sectionLogoUno {
+  width: 100%; }
+
+.sectionLogoDos {
+  grid-area: area3;
+  width: 100%;
+  height: 380px; }
+
+.sectionLogoDos img {
+  max-width: 100%;
+  max-height: 100%; }
+
+/* Anuncia en redes */
+.redesSocialesMenu {
+  width: 20%;
+  display: flex;
+  justify-content: center; }
+
+#redes {
+  background-color: #0a1a36;
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%; }
+
+#redesUno {
+  color: white; }
+
+#redesDos {
+  color: white; }
+
+#redesTres {
+  padding-top: 2%;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  line-height: 20px; }
+
+#redesCuatro {
+  padding-top: 2%;
+  color: white;
+  text-align: center; }
 
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -257,89 +394,6 @@ li {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 15px; }
-
-.redesSocialesMenu {
-  width: 20%;
-  display: flex;
-  justify-content: center; }
-
-/* aca va botn ver mas */
-.padre {
-  margin-top: 2%;
-  height: 760px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 380px 380px;
-  grid-template-areas: "area1 area2" "area3 area4"; }
-
-.disWeb {
-  display: grid;
-  grid-area: area1;
-  background-image: url(images/device_01.png);
-  height: 380px;
-  width: 100%;
-  justify-content: center;
-  align-items: center; }
-
-.disWebDos {
-  width: 100%; }
-
-.devicess {
-  background-color: #eeeeee;
-  grid-area: area2;
-  width: 100%;
-  height: 380px; }
-
-.devicess img {
-  max-width: 100%;
-  max-height: 100%; }
-
-.logo {
-  display: grid;
-  grid-area: area4;
-  width: 100%;
-  height: 380px;
-  justify-content: center;
-  align-items: center; }
-
-.sectionLogoUno {
-  width: 100%; }
-
-.sectionLogoDos {
-  grid-area: area3;
-  width: 100%;
-  height: 380px; }
-
-.sectionLogoDos img {
-  max-width: 100%;
-  max-height: 100%; }
-
-#redes {
-  background-color: #0a1a36;
-  width: 100%;
-  padding-top: 4%;
-  padding-bottom: 4%; }
-
-#redesUno {
-  color: white; }
-
-#redesDos {
-  color: white; }
-
-#redesTres {
-  padding-top: 2%;
-  color: white;
-  text-align: center;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: normal;
-  line-height: 20px; }
-
-#redesCuatro {
-  padding-top: 2%;
-  color: white;
-  text-align: center; }
 
 .imgDeco {
   background-image: url("../images/deco.png");
