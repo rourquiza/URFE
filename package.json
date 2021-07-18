@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-final-urquiza",
+  "version": "1.0.0",
+  "description": "weburfe",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rourquiza/URFE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rourquiza/URFE/issues"
+  },
+  "homepage": "https://github.com/rourquiza/URFE#readme"
+}
