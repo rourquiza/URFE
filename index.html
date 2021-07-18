@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +7,19 @@
     <meta name="description"
         content="Somos URFE, un estudio de diseño, si sos pyme, no dudes en escribirnos! mejora tu marca en todos los aspectos.">
     <meta name="keywords" content="DISEÑO, PUBLICIDAD, PAG WEB, REDES SOCIALES">
+    <meta name="author" content= "Urquiza Rocio">
+    <meta name="copyright" content="Estudio URFE">
+    <!--Open-graph-->
+    <meta property="og: title" content= "Estudio URFE">
+    <meta property="og: description" content= "Somos URFE, un estudio de diseño">
+    <meta property="og: image" content= "img/logoazul.png">
+    <meta property="og: url" content= "https://urfe.netlify.app">
+    <meta property="og: image" content= "img/logoazul.png">
+    <meta property="og: locale" content= "es_ES">
     <title>Estudio de diseño URFE</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="./images/fav.png">
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
@@ -35,8 +43,24 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="./Pages/Nosotros.html">NOSOTROS</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Pages/Servicios.html">SERVICIOS</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  SERVICIOS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li>
+                                    <a class="dropdown-item" href="./Pages/Disgrafico.html">Diseño Gráfico</a>
+                                  </li>
+                                  <li>
+                                      <a class="dropdown-item" href="#">Marketing Digital</a>
+                                    </li>
+                                  <li>
+                                      <a class="dropdown-item" href="#">Diseño Digital</a>
+                                    </li>
+                                  <li>
+                                      <a class="dropdown-item" href="#">Branding</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./Pages/Portfolio.html">PORFOLIO</a>
@@ -168,9 +192,8 @@
                 <h5>
                     DISEÑO GRÁFICO
                 </h5>
-                <h7>
-                    Diseño editorial, logotipos, tarjetas personales, revistas, folletos, flyers, brochures. Tapas de
-                    libros. Packaging.
+                <h7>   
+                Diseñamos comunicaciones visuales para transmitir mensajes específicos a grupos sociales determinados.
                 </h7>
             </div>
             <div class="iconosDos">
@@ -178,32 +201,29 @@
                     <img src="images/icono2.svg" alt="">
                 </div>
                 <h5>
-                    MARKETING
+                    MARKETING DIGITAL
                 </h5>
                 <h7>
-                    Planificación estratégica, email marketing y newsletters. Facebooks/Instagram Ads.
-                </h7>
-            </div>
+                Creamos y ejecutamos estrategias de comunicación y marketing en distintas plataformas y medios.            </div>
             <div class="iconosTres">
-                <div class="imagenesIconos">
-                    <img src="images/icono3.svg" alt="">
-                </div>
-                <h5>
-                    SOCIAL MEDIA
-                </h5>
-                <h7>
-                    Creación, diseño y gestión de redes sociales. Estrategia de comunicación, redacción creativa.
-                </h7>
-            </div>
-            <div class="iconosCuatro">
                 <div class="imagenesIconos">
                     <img src="images/icono4.svg" alt="">
                 </div>
                 <h5>
-                    DISEÑO WEB
+                    DISEÑO DIGITAL
                 </h5>
                 <h7>
-                    Diseños personalizados, responsive, adaptado a las necesidades de tu marca.
+                    Desarrollamos webs, landings y micrositios efectivos para que lograr la presencia online más efectiva.                </h7>
+            </div>
+            <div class="iconosCuatro">
+                <div class="imagenesIconos">
+                    <img src="images/icono3.svg" alt="">
+                </div>
+                <h5>
+                    BRANDING
+                </h5>
+                <h7>
+                    Trabajamos en la creación de marcas desde su concepto hasta su completa implementación.                </h7>
                 </h7>
             </div>
         </section>
@@ -236,7 +256,7 @@
                 </div>
             </div>
             <div class="botonTrabajos">
-                <a title="botonvermas" href="../Proyecto Final 1/Pages/Portfolio.html"><button class="botonvermas">VER
+                <a title="botonvermas" href="./Pages/Portfolio.html"><button class="botonvermas">VER
                         MÁS</button></a>
             </div>
         </section>
@@ -246,7 +266,7 @@
     <section class="padre">
         <div class="disWeb">
             <div class="disWebDos">
-                <h4>DISEÑO WEB</h3>
+                <h4>DISEÑO WEB</h4>
                     <h5>INTERACTIVO Y DINÁMICO</h5>
                     <p class="parrafoDos">Todas nuestros diseños son interactivos y dinámicos y están listas para
                         usar.
@@ -302,7 +322,10 @@
         <div class="logoBlanco">
             <a href="./index.html"><img src="images/logoblanco.png" alt=""></a>
         </div>
+        </div>
+        <h5 id="copyright"> © 2021 URFE - TODOS LOS DERECHOS RESERVADOS </h5>
     </footer>
+    <!--Comienza scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>

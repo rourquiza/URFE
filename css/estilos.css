@@ -46,6 +46,20 @@ h7 {
   color: #656b6f;
   text-align: center; }
 
+h8 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  font-size: 30px;
+  color: white; }
+
+h9 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  font-size: 30px;
+  color: white; }
+
 p {
   color: black1;
   font-family: "Montserrat", sans-serif;
@@ -386,11 +400,6 @@ nav {
     grid-template-areas: "area1 area2" "area3 area4"; } }
 
 /* Anuncia en redes index */
-.redesSocialesMenu {
-  width: 20%;
-  display: flex;
-  justify-content: center; }
-
 #redes {
   background-color: #0a1a36;
   width: 100%;
@@ -436,17 +445,47 @@ footer {
   width: 100%;
   background-color: #3b3d40;
   padding-top: 3%;
-  padding-bottom: 3%; }
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: baseline;
+  justify-content: space-between; }
 
 .logoBlanco {
+  display: flex;
   padding-left: 10%; }
+
+#copyright {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 10%; }
 
 @media only screen and (max-width: 991px) {
   footer {
     width: 100%;
     background-color: #3b3d40;
     padding-top: 5%;
-    padding-bottom: 5%; } }
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center; }
+  .logoBlanco {
+    display: flex;
+    justify-content: center;
+    padding-left: 0%; }
+  #copyright {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3%;
+    padding-right: 0%;
+    justify-content: center; } }
 
 /* PESTAÑA CONTACTO */
 #contacto {
@@ -495,7 +534,24 @@ footer {
   padding-top: 2%; }
 
 /* PESTAÑA SERVICIOS */
-.servicioTodos {
-  margin-top: 20px;
-  margin-left: 10%;
-  margin-right: 10%; }
+.portada {
+  width: 100%;
+  padding-top: 4%;
+  padding-right: 6%;
+  padding-left: 6%; }
+
+.portadas, .portadasDos {
+  align-items: center;
+  align-content: center;
+  text-align: center; }
+
+.portadasDos {
+  font-size: 35px; }
+
+.serviciostodos {
+  width: 100%;
+  margin-top: 3%;
+  padding-bottom: 3%;
+  padding-top: 42px;
+  padding-left: 6%;
+  background-color: #0a1a36; }
