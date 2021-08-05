@@ -159,11 +159,11 @@ nav {
 
         .redesMenu {
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
         width: 40px;
         height: 30px;
-        
-        img {
+      
+      img {
             width: 100%;
             }
       } 
@@ -387,6 +387,9 @@ nav {
     margin-top: 5%;
     margin-bottom: 4%;
 }
+.capaUno , .capaDos , .capaTres , .capaCuatro , .capaCinco , .capaSeis {
+  display:none;
+} 
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -400,6 +403,10 @@ nav {
       column-gap: 10px;
       row-gap: 10px;
       margin: 20px;
+      }
+
+      .capaUno , .capaDos , .capaTres , .capaCuatro , .capaCinco , .capaSeis {
+        display:none;
       }
 }
 
@@ -653,6 +660,10 @@ nav {
   .padre {
     display: none !important;
     }
+
+  #clientesDos{
+    display: none !important; 
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -833,6 +844,11 @@ footer {
   color: #0a1a36;
 }
 
+  @media (min-width: 320px) and (max-width: 991px){
+  .mapaUno{
+    display:none;
+  }
+}
 /* PESTAÑA NOSOTROS */
 
 .nosotrosUno {
@@ -879,14 +895,14 @@ footer {
   width:100%;
   margin-top:3%;
   padding-bottom:3%;
-  padding-top:42px;
+  padding-top:3%;
   padding-left:6%;
   background-color:#0a1a36;
 }
 
 /* CLIENTES */
 
-#clientes{
+#clientes , #clientesDos{
   background-color: #eeeeee;
   padding-bottom: 3%;
   padding-top:3%;
