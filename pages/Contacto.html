@@ -35,21 +35,22 @@
                                 <a class="nav-link" aria-current="page" href="../Pages/Nosotros.html">NOSOTROS</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  SERVICIOS
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    SERVICIOS
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li>
-                                    <a class="dropdown-item" href="../Pages/Disgrafico.html">Diseño Gráfico</a>
-                                  </li>
-                                  <li>
-                                      <a class="dropdown-item" href="../Pages/Mktdigital.html">Marketing Digital</a>
+                                    <li>
+                                        <a class="dropdown-item" href="../Pages/Disgrafico.html">Diseño Gráfico</a>
                                     </li>
-                                  <li>
-                                      <a class="dropdown-item" href="../Pages/DisDigital.html">Diseño Digital</a>
+                                    <li>
+                                        <a class="dropdown-item" href="../Pages/Mktdigital.html">Marketing Digital</a>
                                     </li>
-                                  <li>
-                                      <a class="dropdown-item" href="../Pages/Branding.html">Branding</a>
+                                    <li>
+                                        <a class="dropdown-item" href="../Pages/DisDigital.html">Diseño Digital</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Pages/Branding.html">Branding</a>
                                     </li>
                                 </ul>
                             </li>
@@ -97,16 +98,40 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary" id="contactoTres">Enviar</button>
+                <!-- Boton -->
+                <button type="button" id="contactoTres" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Enviar
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Muchas Gracias</h5>
+                            </div>
+                            <div class="modal-body">
+                                Responderemos su consulta a la brevedad
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="contactoTres" class="btn btn-primary"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--Mapa -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.23061026404!2d-64.26455568082937!3d-31.39928754167405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1627350022133!5m2!1ses-419!2sar"
+        width="1920" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <!--Comienza mi footer-->
     <footer>
         <div class="logoBlanco">
-            <a href="../index.html"><img src="../images/logoblanco.png" alt=""></a>        </div>
+            <a href="../index.html"><img src="../images/logoblanco.png" alt=""></a>
+        </div>
         </div>
         <h5 id="copyright"> © 2021 URFE - TODOS LOS DERECHOS RESERVADOS </h5>
     </footer>

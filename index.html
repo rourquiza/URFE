@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,19 @@
     <meta name="description"
         content="Somos URFE, un estudio de diseño, si sos pyme, no dudes en escribirnos! mejora tu marca en todos los aspectos.">
     <meta name="keywords" content="DISEÑO, PUBLICIDAD, PAG WEB, REDES SOCIALES">
-    <meta name="author" content= "Urquiza Rocio">
+    <meta name="author" content="Urquiza Rocio">
     <meta name="copyright" content="Estudio URFE">
     <!--Open-graph-->
-    <meta property="og: title" content= "Estudio URFE">
-    <meta property="og: description" content= "Somos URFE, un estudio de diseño">
-    <meta property="og: image" content= "img/logoazul.png">
-    <meta property="og: url" content= "https://urfe.netlify.app">
-    <meta property="og: image" content= "img/logoazul.png">
-    <meta property="og: locale" content= "es_ES">
+    <meta property="og: title" content="Estudio URFE">
+    <meta property="og: description" content="Somos URFE, un estudio de diseño">
+    <meta property="og: image" content="img/logoazul.png">
+    <meta property="og: url" content="https://urfe.netlify.app">
+    <meta property="og: image" content="img/logoazul.png">
+    <meta property="og: locale" content="es_ES">
     <title>Estudio de diseño URFE</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -44,21 +46,22 @@
                                 <a class="nav-link" aria-current="page" href="./Pages/Nosotros.html">NOSOTROS</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  SERVICIOS
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    SERVICIOS
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li>
-                                    <a class="dropdown-item" href="./Pages/Disgrafico.html">Diseño Gráfico</a>
-                                  </li>
-                                  <li>
-                                      <a class="dropdown-item" href="#">Marketing Digital</a>
+                                    <li>
+                                        <a class="dropdown-item" href="./Pages/Disgrafico.html">Diseño Gráfico</a>
                                     </li>
-                                  <li>
-                                      <a class="dropdown-item" href="#">Diseño Digital</a>
+                                    <li>
+                                        <a class="dropdown-item" href="./Pages/Mktdigital.html">Marketing Digital</a>
                                     </li>
-                                  <li>
-                                      <a class="dropdown-item" href="#">Branding</a>
+                                    <li>
+                                        <a class="dropdown-item" href="./Pages/DisDigital.html">Diseño Digital</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./Pages/Branding.html">Branding</a>
                                     </li>
                                 </ul>
                             </li>
@@ -192,8 +195,9 @@
                 <h5>
                     DISEÑO GRÁFICO
                 </h5>
-                <h7>   
-                Diseñamos comunicaciones visuales para transmitir mensajes específicos a grupos sociales determinados.
+                <h7>
+                    Diseñamos comunicaciones visuales para transmitir mensajes específicos a grupos sociales
+                    determinados.
                 </h7>
             </div>
             <div class="iconosDos">
@@ -204,7 +208,8 @@
                     MARKETING DIGITAL
                 </h5>
                 <h7>
-                Creamos y ejecutamos estrategias de comunicación y marketing en distintas plataformas y medios.            </div>
+                    Creamos y ejecutamos estrategias de comunicación y marketing en distintas plataformas y medios.
+            </div>
             <div class="iconosTres">
                 <div class="imagenesIconos">
                     <img src="images/icono4.svg" alt="">
@@ -213,7 +218,8 @@
                     DISEÑO DIGITAL
                 </h5>
                 <h7>
-                    Desarrollamos webs, landings y micrositios efectivos para que lograr la presencia online más efectiva.                </h7>
+                    Desarrollamos webs, landings y micrositios efectivos para que lograr la presencia online más
+                    efectiva. </h7>
             </div>
             <div class="iconosCuatro">
                 <div class="imagenesIconos">
@@ -223,7 +229,7 @@
                     BRANDING
                 </h5>
                 <h7>
-                    Trabajamos en la creación de marcas desde su concepto hasta su completa implementación.                </h7>
+                    Trabajamos en la creación de marcas desde su concepto hasta su completa implementación. </h7>
                 </h7>
             </div>
         </section>
@@ -238,21 +244,45 @@
             <div id="imagesTrabajos">
                 <div class="trabajoUno">
                     <img class="image" src="images/Uno.png" alt="">
+                    <div class="capaUno">
+                        <h5 id="UnoT" style="display: none;"> TEX</h5>
+                        <p id="UnoD" style="display: none;"> Diseño de Packaging </p>
+                    </div>
                 </div>
                 <div class="trabajoDos">
                     <img class="image" src="images/Dos.png" alt="">
+                    <div class="capaDos">
+                        <h5 id="DosT" style="display: none;"> TEX</h5>
+                        <p id="DosD" style="display: none;"> Diseño de Packaging </p>
+                    </div>
                 </div>
                 <div class="trabajoTres">
                     <img class="image" src="images/Tres.png" alt="">
+                    <div class="capaTres">
+                        <h5 id="TresT" style="display: none;"> TEX</h5>
+                        <p id="TresD" style="display: none;"> Diseño de Packaging </p>
+                    </div>
                 </div>
                 <div class="trabajoCuatro">
                     <img class="image" src="images/Cuatro.png" alt="">
+                    <div class="capaCuatro">
+                        <h5 id="CuatroT" style="display: none;"> TEX</h5>
+                        <p id="CuatroD" style="display: none;"> Diseño de Packaging </p>
+                    </div>
                 </div>
                 <div class="trabajoCinco">
                     <img class="image" src="images/Cinco.png" alt="">
+                    <div class="capaCinco">
+                        <h5 id="CincoT" style="display: none;"> TEX</h5>
+                        <p id="CincoD" style="display: none;"> Diseño de Packaging </p>
+                    </div>
                 </div>
                 <div class="trabajoSeis">
                     <img class="image" src="images/Seis.png" alt="">
+                    <div class="capaSeis">
+                        <h5 id="SeisT" style="display: none;"> TEX</h5>
+                        <p id="SeisD" style="display: none;"> Diseño de Packaging </p>
+                    </div>
                 </div>
             </div>
             <div class="botonTrabajos">
@@ -267,20 +297,19 @@
         <div class="disWeb">
             <div class="disWebDos">
                 <h4>DISEÑO WEB</h4>
-                    <h5>INTERACTIVO Y DINÁMICO</h5>
-                    <p class="parrafoDos">Todas nuestros diseños son interactivos y dinámicos y están listas para
-                        usar.
-                        El diseño del tu web se ajustará automáticamente cuando este sea visitado mediante móviles,
-                        tabletas o pantallas de cualquier tamaño. También podrás cambiar el contenido de tu
-                        página web.
-                    </p>
+                <h5>INTERACTIVO Y DINÁMICO</h5>
+                <p class="parrafoDos">Todas nuestros diseños son interactivos y dinámicos y están listas para
+                    usar.
+                    El diseño del tu web se ajustará automáticamente cuando este sea visitado mediante móviles,
+                    tabletas o pantallas de cualquier tamaño. También podrás cambiar el contenido de tu
+                    página web.
+                </p>
             </div>
         </div>
         <div class="devicess">
             <img src="images/device_02.png" alt="">
         </div>
         </div>
-
         <div class="logo">
             <div class="sectionLogoUno">
                 <h6>LOGOTIPOS</h6>
@@ -296,8 +325,30 @@
             <img src="images/logos.png" alt="">
         </div>
         </div>
-
     </section>
+
+    <!--Comienza Clientes-->
+    <div class="container-fluid" id="clientes">
+        <h1>CLIENTES</h1>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="images/ clientes/angeles.png"></div>
+            <div class="slide"><img src="images/ clientes/ASTREA.png"></div>
+            <div class="slide"><img src="images/ clientes/Bolsa.png"></div>
+            <div class="slide"><img src="images/ clientes/cascu.png"></div>
+            <div class="slide"><img src="images/ clientes/corps.png"></div>
+            <div class="slide"><img src="images/ clientes/dcp.png"></div>
+            <div class="slide"><img src="images/ clientes/dulced.png"></div>
+            <div class="slide"><img src="images/ clientes/estilo.png"></div>
+            <div class="slide"><img src="images/ clientes/fix.png"></div>
+            <div class="slide"><img src="images/ clientes/green.png"></div>
+            <div class="slide"><img src="images/ clientes/naranjal.png"></div>
+            <div class="slide"><img src="images/ clientes/pas.png"></div>
+            <div class="slide"><img src="images/ clientes/Rabellino.png"></div>
+            <div class="slide"><img src="images/ clientes/red.png"></div>
+            <div class="slide"><img src="images/ clientes/tecno.png"></div>
+            <div class="slide"><img src="images/ clientes/tex.png"></div>
+        </section>
+    </div>
 
     <section>
         <div id="redes">
@@ -325,10 +376,14 @@
         </div>
         <h5 id="copyright"> © 2021 URFE - TODOS LOS DERECHOS RESERVADOS </h5>
     </footer>
-    <!--Comienza scripts-->
+    <!--Comienza sscripts-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

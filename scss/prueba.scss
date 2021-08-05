@@ -101,7 +101,8 @@ p {
 
 /* BOTONES index*/
 
-    @mixin boton ($colorTextoBoton, $colorFondoBoton, $tamanioTextoBoton, $paddingLeftBoton, $paddingRightBoton, $paddingTopBoton, $paddingButtomBoton,  ) {
+    @mixin boton ($colorTextoBoton, $colorFondoBoton, $tamanioTextoBoton, 
+          $paddingLeftBoton, $paddingRightBoton, $paddingTopBoton, $paddingButtomBoton,  ) {
       padding-left: $paddingLeftBoton;
       padding-right: $paddingRightBoton;
       font-size: $tamanioTextoBoton;
@@ -131,7 +132,6 @@ p {
         height: 50px;
         margin-top: 2%;
       }
-
 /* navegador general */
 nav {
   width: 100%;
@@ -271,32 +271,33 @@ nav {
 @media (min-width: 320px) and (max-width: 767px){
   .iconosBarra {
   display: grid;
-  grid-template-columns: repeat(1, 4fr);
+  grid-template-columns: 900px;
+  grid-template-rows: 4fr;
   grid-template-areas:
     " Uno" 
     "Dos "
     "Tres " 
     "Cuatro";
   background-color: white;
-  width: 100%;
+  width: 400px;
   padding-top: 3%;
+  padding-left:20%;
   padding-bottom: 4%;
   margin-top: 3%;
-  justify-content:center;
-  justify-items:center;
   row-gap: 40px;
   border-bottom: 1px solid #f3f2f2;
+  justify-content: center;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
   .iconosBarra {
+  background-color: #f3f2f2;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-areas:
     " Uno Dos "
       "Tres Cuatro";
-  background-color: #f3f2f2;
   width: 100%;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -340,7 +341,6 @@ nav {
   row-gap: 10px;
   margin: 20px;
 }
-
    @mixin trabajos ($anchoTrabajo, $altoTrabajo, $gridTrabajo, ) {
       width: $anchoTrabajo;
       height: $altoTrabajo;
@@ -412,6 +412,177 @@ nav {
   column-gap: 10px;
   row-gap: 10px;
   margin: 20px;
+    }
+  
+    @mixin hovers ($justifyhover, $alinghover, $positionhover, $overhovers, $cursorhovers, $transformhovers){
+    justify-content:$justifyhover;
+    align-items:$alinghover;
+    position:$positionhover;
+    overflow:$overhovers;
+    cursor: $cursorhovers;
+    transform: $transformhovers; 
+  }
+    @mixin hoversN ($positionN, $topsN, $altoN, $anchoN, $colorN, $transaccionN, $opacidadN, $visibilidadN, $alineacionN, ){
+        position:$positionN,;
+        top:$topsN;
+        width:$altoN,;
+        height:$anchoN;
+        background: $colorN;
+        transition: $transaccionN;
+        opacity:$opacidadN;
+        visibility:$visibilidadN;
+        text-align: $alineacionN;  
+  }
+  @mixin hoversT ($colorT, $margenT, $transT, $margT, $alinT, $tamaT, $espacioT, $tipoFT, ){
+        color:$colorT;
+        margin-bottom:$margenT;
+        transition: $transT;
+        margin-top:$margT;
+        text-align:$alinT;
+        font-size:$tamaT;
+        padding-top:$espacioT; 
+        font-weight:$tipoFT;
+  }
+  .trabajoUno{
+    @include hovers (center, center, relative, hidden, pointer, scale (1.2))
+      .capaUno{
+        @include hoversN (absolute, 0, 100%, 100%, rgba(10, 26, 54, 0.8), all 500ms ease-out, 0, hidden, center )  
+      }
+      #UnoT{
+        @include hoversT (white, 120px, all 500ms ease-out, 300px, center, 21px, 17%, bold)
+      }
+      #UnoD{
+        color: white;
+        font-size:15px;
+        width:100%;
+        margin:auto;
+        text-align:center;
+      }
+    }
+    .trabajoUno:hover .capaUno{
+      display: block;
+      opacity: 1;  
+      visibility:visible;
+      justify-content:center;
+      #UnoT{
+       margin-top:70px;
+       margin-bottom: 15px;
+     }
+    }
+    .trabajoDos{
+      @include hovers (center, center, relative, hidden, pointer, scale (1.2))
+      .capaDos{
+      @include hoversN (absolute, 0, 100%, 100%, rgba(10, 26, 54, 0.8), all 500ms ease-out, 0, hidden, center ) 
+      }
+      #DosT{
+        @include hoversT (white, 120px, all 500ms ease-out, 300px, center, 21px, 17%, bold)
+      }
+      #DosD{
+        @extend #UnoD ;
+        color: white;
+      }
+    }
+    .trabajoDos:hover .capaDos{
+      display: block;
+      opacity: 1;  
+      visibility:visible;
+      justify-content:center;
+      #DosT{
+       margin-top:70px;
+       margin-bottom: 15px;
+     }
+    }
+    .trabajoTres{
+      @include hovers (center, center, relative, hidden, pointer, scale (1.2))
+      .capaTres{
+      @include hoversN (absolute, 0, 100%, 100%, rgba(10, 26, 54, 0.8), all 500ms ease-out, 0, hidden, center ) 
+      }
+      #TresT{
+        @include hoversT (white, 120px, all 500ms ease-out, 300px, center, 21px, 17%, bold)
+      }
+      #TresD{
+        @extend #UnoD ;
+        color: white;
+      }
+    }
+    .trabajoTres:hover .capaTres{
+      display: block;
+      opacity: 1;  
+      visibility:visible;
+      justify-content:center;
+      #TresT{
+       margin-top:70px;
+       margin-bottom: 15px;
+     }
+    }
+    .trabajoCuatro{
+      @include hovers (center, center, relative, hidden, pointer, scale (1.2))
+      .capaCuatro{
+      @include hoversN (absolute, 0, 100%, 100%, rgba(10, 26, 54, 0.8), all 500ms ease-out, 0, hidden, center ) 
+      }
+      #CuatroT{
+        @include hoversT (white, 120px, all 500ms ease-out, 300px, center, 21px, 17%, bold)
+      }
+      #CuatroD{
+        @extend #UnoD ;
+        color: white;
+      }
+    }
+    .trabajoCuatro:hover .capaCuatro{
+      display: block;
+      opacity: 1;  
+      visibility:visible;
+      justify-content:center;
+      #CuatroT{
+       margin-top:70px;
+       margin-bottom: 15px;
+     }
+    }
+    .trabajoCinco{
+      @include hovers (center, center, relative, hidden, pointer, scale (1.2))
+      .capaCinco{
+      @include hoversN (absolute, 0, 100%, 100%, rgba(10, 26, 54, 0.8), all 500ms ease-out, 0, hidden, center ) 
+      }
+      #CincoT{
+        @include hoversT (white, 120px, all 500ms ease-out, 300px, center, 21px, 17%, bold)
+      }
+      #CincoD{
+        @extend #UnoD ;
+        color: white;
+      }
+    }
+    .trabajoCinco:hover .capaCinco{
+      display: block;
+      opacity: 1;  
+      visibility:visible;
+      justify-content:center;
+      #CincoT{
+       margin-top:70px;
+       margin-bottom: 15px;
+     }
+    }
+    .trabajoSeis{
+      @include hovers (center, center, relative, hidden, pointer, scale (1.2))
+      .capaSeis{
+      @include hoversN (absolute, 0, 100%, 100%, rgba(10, 26, 54, 0.8), all 500ms ease-out, 0, hidden, center ) 
+      }
+      #SeisT{
+        @include hoversT (white, 120px, all 500ms ease-out, 300px, center, 21px, 17%, bold)
+      }
+      #SeisD{
+        @extend #UnoD ;
+        color: white;
+      }
+    }
+    .trabajoSeis:hover .capaSeis{
+      display: block;
+      opacity: 1;  
+      visibility:visible;
+      justify-content:center;
+      #SeisT{
+       margin-top:70px;
+       margin-bottom: 15px;
+     }
     }
 }
 
@@ -544,8 +715,19 @@ nav {
   width: 100%;
   margin-top: 2%;
   padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top:7%;
+  padding-bottom: 6%;
 }
+  #redesUno{
+    font-size:20px;
+  }
+  #redesDos{
+    font-size:25px;
+  }
+  #redesTres , #redesCuatro{
+    font-size:13px;
+    line-height:18px;
+  }
 }
 
 /* img deco index */
@@ -613,6 +795,7 @@ footer {
     padding-top:3%;
     padding-right:0%;
     justify-content:center;
+    font-size: 12px;
   }
 }
 
@@ -699,4 +882,251 @@ footer {
   padding-top:42px;
   padding-left:6%;
   background-color:#0a1a36;
+}
+
+/* CLIENTES */
+
+#clientes{
+  background-color: #eeeeee;
+  padding-bottom: 3%;
+  padding-top:3%;
+
+  h1{
+    color:#0a1a36;
+    padding-bottom:2%;
+  }
+}
+
+#clientesOt{
+  @extend #clientes ;
+  background-color: white;
+} 
+.slick-slide {
+  margin: 0px 10px;
+  img {
+  width: 100%;
+}
+}
+
+.slick-slider
+{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus
+{
+  outline: none;
+}
+.slick-list.dragging
+{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+  display: table;
+  content: '';
+}
+.slick-track:after
+{
+  clear: both;
+}
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+
+.slick-slide
+{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+  float: right;
+ img
+{
+  display: block;
+}
+}
+.slick-slide.slick-loading img
+{
+  display: none;
+}
+.slick-slide.dragging img
+{
+  pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+  display: block;
+}
+.slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* ERROR */
+
+.HomeE{
+padding-top: 3%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Fascinate);
+
+*{ box-sizing: border-box;}
+
+.errores {
+  width: 100%; 
+  min-height:100%;
+  font-family: 'Fascinate', cursive;
+  background: #eeeeee; 
+  font-size:14px;
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
+  overflow-y:auto;
+  overflow-x:hidden;
+  padding-bottom:4rem;
+   & span{
+    margin:-2rem 0;
+    color:#0a1a36;
+    align-self:center;
+    font-size:34rem;
+    letter-spacing:-1rem;
+    transition:font-size .3s ease;
+    text-shadow:
+      0px 0px 0  #FFAC78,
+      -1px 1px 0 #FFAC78,
+      -2px 2px 0 #FFAC78,
+      -3px 3px 0 #FFAC78,
+      -4px 4px 0 #FFAC78,
+      -5px 5px 0 #FFAC78,
+      -6px 6px 0 #FFAC78,
+      -7px 7px 0 #FFE2A8,
+      -8px 8px 0 #FFE2A8,
+      -9px 9px 0 #FFE2A8,
+      -10px 10px 0 #FFE2A8,
+      -11px 11px 0 #FFE2A8,
+      -12px 12px 0 #FFE2A8,
+      -13px 13px 0 #FFE2A8,
+      -14px 14px 0 #FFE2A8,
+      -15px 15px 0 #FFE2A8,
+      -16px 16px 0 #FFE2A8, 
+      -17px 17px 0 hsla(0,0%,0%,.19),
+      0 6px 1px hsla(0,0%,0%,.1),
+      0 0 5px hsla(0,0%,0%,.2),
+      0 1px 3px hsla(0,0%,0%,.25),
+      0 3px 5px hsla(0,0%,0%,.28),
+      0 5px 10px hsla(0,0%,0%,.35),
+      0 10px 15px hsla(0,0%,0%,.4),
+      0 20px 20px hsla(0,0%,0%,.45);
+    &.one{
+      transform: rotate(-26deg);
+    }
+    &.two{
+      color:#3a5583;
+      font-size:36rem;
+     }
+     &.mid{
+       color:#3a5583;
+       font-size:6rem;
+       margin-left:-7rem;
+       margin-top:16rem;
+       z-index:3;
+       letter-spacing:-6px;
+     }
+    &.three{
+      transform:rotate(26deg);
+      margin-left:-5rem;
+      margin-top:-8rem;
+    }
+  }
+}
+@media (min-width:40.6875em) and (max-width:51.875em){
+  .errores{
+    & span{
+      font-size:28rem;
+      &.two, &.three{
+        font-size:30rem;
+      }
+    }
+  }
+}
+@media (min-width:30.0625em) and (max-width:40.625em){
+  .errores{
+    span{
+      font-size:22rem;
+      &.two, &.three{
+        font-size:24rem;
+      }
+    }
+  }
+}
+@media (max-width:30.0em){
+  .errores{
+    span{
+      align-self:center;
+      font-size:18rem;
+      &.two{
+        font-size:20rem;
+      }
+      &.mid{
+        margin-top:11rem;
+        margin-left:-5rem
+      }
+      &.three{
+        margin-left:-7rem;
+      }
+    }
+  }
 }

@@ -35,21 +35,22 @@
                                 <a class="nav-link" aria-current="page" href="../Pages/Nosotros.html">NOSOTROS</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  SERVICIOS
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    SERVICIOS
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li>
-                                    <a class="dropdown-item" href="../Pages/Disgrafico.html">Diseño Gráfico</a>
-                                  </li>
-                                  <li>
-                                      <a class="dropdown-item" href="../Pages/Mktdigital.html">Marketing Digital</a>
+                                    <li>
+                                        <a class="dropdown-item" href="../Pages/Disgrafico.html">Diseño Gráfico</a>
                                     </li>
-                                  <li>
-                                      <a class="dropdown-item" href="../Pages/DisDigital.html">Diseño Digital</a>
+                                    <li>
+                                        <a class="dropdown-item" href="../Pages/Mktdigital.html">Marketing Digital</a>
                                     </li>
-                                  <li>
-                                      <a class="dropdown-item" href="../Pages/Branding.html">Branding</a>
+                                    <li>
+                                        <a class="dropdown-item" href="../Pages/DisDigital.html">Diseño Digital</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Pages/Branding.html">Branding</a>
                                     </li>
                                 </ul>
                             </li>
@@ -73,11 +74,11 @@
     </header>
     <!-- img deco -->
     <div id="nosotrosUno">
-        <img src="../images/conocenos.jpg" class="img-fluid" alt="img-fluid">
+        <img src="../images/conocenos.png" class="img-fluid" alt="img-fluid">
     </div>
     <!-- comienzo txt-->
     <section class="nosotrosDos">
-        <h2>ALGUNAS COSAS QUE HACEMOS</h2>
+        <h2>SOBRE NOSOTROS</h2>
         <div class="somosNosotros">
             <p>
                 Creemos que todas las empresas pueden convertirse en grandes empresas. Y que ese desarrollo beneficia a
@@ -93,37 +94,27 @@
             </p>
         </div>
     </section>
-    <!-- comienzan integrantes-->
-    <div class="container integrantes">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="../images/yo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Presidente</h5>
-                        <p class="card-text">Urquiza Rocio</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="../images/gordo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Director de Contenido</h5>
-                        <p class="card-text">Ivan Filevich</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="../images/nir.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Directora de Compras</h5>
-                        <p class="card-text">Nirvana Garces Nicolle</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!--Comienza Clientes-->
+    <div class="container-fluid" id="clientesOt">
+        <h1>CLIENTES</h1>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="../images/ clientes/angeles.png"></div>
+            <div class="slide"><img src="../images/ clientes/ASTREA.png"></div>
+            <div class="slide"><img src="../images/ clientes/Bolsa.png"></div>
+            <div class="slide"><img src="../images/ clientes/cascu.png"></div>
+            <div class="slide"><img src="../images/ clientes/corps.png"></div>
+            <div class="slide"><img src="../images/ clientes/dcp.png"></div>
+            <div class="slide"><img src="../images/ clientes/dulced.png"></div>
+            <div class="slide"><img src="../images/ clientes/estilo.png"></div>
+            <div class="slide"><img src="../images/ clientes/fix.png"></div>
+            <div class="slide"><img src="../images/ clientes/green.png"></div>
+            <div class="slide"><img src="../images/ clientes/naranjal.png"></div>
+            <div class="slide"><img src="../images/ clientes/pas.png"></div>
+            <div class="slide"><img src="../images/ clientes/Rabellino.png"></div>
+            <div class="slide"><img src="../images/ clientes/red.png"></div>
+            <div class="slide"><img src="../images/ clientes/tecno.png"></div>
+            <div class="slide"><img src="../images/ clientes/tex.png"></div>
+        </section>
     </div>
     <!--Comienza promo-->
 
@@ -131,11 +122,16 @@
     <!--Comienza mi footer-->
     <footer>
         <div class="logoBlanco">
-            <a href="../index.html"><img src="../images/logoblanco.png" alt=""></a>        </div>
+            <a href="../index.html"><img src="../images/logoblanco.png" alt=""></a>
+        </div>
         </div>
         <h5 id="copyright"> © 2021 URFE - TODOS LOS DERECHOS RESERVADOS </h5>
     </footer>
     <!--Comienza scripts-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>

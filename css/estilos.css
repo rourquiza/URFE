@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Fascinate);
 * {
   margin: 0%;
   padding: 0%; }
@@ -61,7 +62,7 @@ h9 {
   color: white; }
 
 p {
-  color: black1;
+  color: black;
   font-family: "Montserrat", sans-serif;
   font-style: bold;
   font: weight 400px;
@@ -69,13 +70,13 @@ p {
   text-align: center; }
 
 .parrafoDos {
-  color: black1;
+  color: black;
   text-align: left;
   padding-top: 1%;
   font-size: 13px; }
 
 .parrafoTres {
-  color: black1;
+  color: black;
   text-align: right;
   padding-top: 1%;
   font-size: 13px; }
@@ -165,7 +166,7 @@ nav {
 
 /* parrafos */
 .parrafoUno {
-  color: black1;
+  color: black;
   text-align: center;
   padding-top: 3%;
   font-size: 13px; }
@@ -216,24 +217,25 @@ nav {
 @media (min-width: 320px) and (max-width: 767px) {
   .iconosBarra {
     display: grid;
-    grid-template-columns: repeat(1, 4fr);
+    grid-template-columns: 900px;
+    grid-template-rows: 4fr;
     grid-template-areas: " Uno"  "Dos " "Tres "  "Cuatro";
     background-color: white;
-    width: 100%;
+    width: 400px;
     padding-top: 3%;
+    padding-left: 20%;
     padding-bottom: 4%;
     margin-top: 3%;
-    justify-content: center;
-    justify-items: center;
     row-gap: 40px;
-    border-bottom: 1px solid #f3f2f2; } }
+    border-bottom: 1px solid #f3f2f2;
+    justify-content: center; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .iconosBarra {
+    background-color: #f3f2f2;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-areas: " Uno Dos " "Tres Cuatro";
-    background-color: #f3f2f2;
     width: 100%;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -329,7 +331,227 @@ nav {
     grid-template-areas: " uno dos tres" "cuatro cinco seis";
     column-gap: 10px;
     row-gap: 10px;
-    margin: 20px; } }
+    margin: 20px; }
+  .trabajoUno {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale 1.2; }
+    .trabajoUno .capaUno {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 26, 54, 0.8);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+    .trabajoUno #UnoT {
+      color: white;
+      margin-bottom: 120px;
+      transition: all 500ms ease-out;
+      margin-top: 300px;
+      text-align: center;
+      font-size: 21px;
+      padding-top: 17%;
+      font-weight: bold; }
+    .trabajoUno #UnoD, .trabajoUno .trabajoDos #DosD, .trabajoDos .trabajoUno #DosD, .trabajoUno .trabajoTres #TresD, .trabajoTres .trabajoUno #TresD, .trabajoUno .trabajoCuatro #CuatroD, .trabajoCuatro .trabajoUno #CuatroD, .trabajoUno .trabajoCinco #CincoD, .trabajoCinco .trabajoUno #CincoD, .trabajoUno .trabajoSeis #SeisD, .trabajoSeis .trabajoUno #SeisD {
+      color: white;
+      font-size: 15px;
+      width: 100%;
+      margin: auto;
+      text-align: center; }
+  .trabajoUno:hover .capaUno {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center; }
+    .trabajoUno:hover .capaUno #UnoT {
+      margin-top: 70px;
+      margin-bottom: 15px; }
+  .trabajoDos {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale 1.2; }
+    .trabajoDos .capaDos {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 26, 54, 0.8);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+    .trabajoDos #DosT {
+      color: white;
+      margin-bottom: 120px;
+      transition: all 500ms ease-out;
+      margin-top: 300px;
+      text-align: center;
+      font-size: 21px;
+      padding-top: 17%;
+      font-weight: bold; }
+    .trabajoDos #DosD {
+      color: white; }
+  .trabajoDos:hover .capaDos {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center; }
+    .trabajoDos:hover .capaDos #DosT {
+      margin-top: 70px;
+      margin-bottom: 15px; }
+  .trabajoTres {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale 1.2; }
+    .trabajoTres .capaTres {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 26, 54, 0.8);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+    .trabajoTres #TresT {
+      color: white;
+      margin-bottom: 120px;
+      transition: all 500ms ease-out;
+      margin-top: 300px;
+      text-align: center;
+      font-size: 21px;
+      padding-top: 17%;
+      font-weight: bold; }
+    .trabajoTres #TresD {
+      color: white; }
+  .trabajoTres:hover .capaTres {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center; }
+    .trabajoTres:hover .capaTres #TresT {
+      margin-top: 70px;
+      margin-bottom: 15px; }
+  .trabajoCuatro {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale 1.2; }
+    .trabajoCuatro .capaCuatro {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 26, 54, 0.8);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+    .trabajoCuatro #CuatroT {
+      color: white;
+      margin-bottom: 120px;
+      transition: all 500ms ease-out;
+      margin-top: 300px;
+      text-align: center;
+      font-size: 21px;
+      padding-top: 17%;
+      font-weight: bold; }
+    .trabajoCuatro #CuatroD {
+      color: white; }
+  .trabajoCuatro:hover .capaCuatro {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center; }
+    .trabajoCuatro:hover .capaCuatro #CuatroT {
+      margin-top: 70px;
+      margin-bottom: 15px; }
+  .trabajoCinco {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale 1.2; }
+    .trabajoCinco .capaCinco {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 26, 54, 0.8);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+    .trabajoCinco #CincoT {
+      color: white;
+      margin-bottom: 120px;
+      transition: all 500ms ease-out;
+      margin-top: 300px;
+      text-align: center;
+      font-size: 21px;
+      padding-top: 17%;
+      font-weight: bold; }
+    .trabajoCinco #CincoD {
+      color: white; }
+  .trabajoCinco:hover .capaCinco {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center; }
+    .trabajoCinco:hover .capaCinco #CincoT {
+      margin-top: 70px;
+      margin-bottom: 15px; }
+  .trabajoSeis {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale 1.2; }
+    .trabajoSeis .capaSeis {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 26, 54, 0.8);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+    .trabajoSeis #SeisT {
+      color: white;
+      margin-bottom: 120px;
+      transition: all 500ms ease-out;
+      margin-top: 300px;
+      text-align: center;
+      font-size: 21px;
+      padding-top: 17%;
+      font-weight: bold; }
+    .trabajoSeis #SeisD {
+      color: white; }
+  .trabajoSeis:hover .capaSeis {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center; }
+    .trabajoSeis:hover .capaSeis #SeisT {
+      margin-top: 70px;
+      margin-bottom: 15px; } }
 
 /* Servicios ofrecidos index*/
 .padre {
@@ -429,7 +651,15 @@ nav {
     width: 100%;
     margin-top: 2%;
     padding-top: 4%;
-    padding-bottom: 4%; } }
+    padding-top: 7%;
+    padding-bottom: 6%; }
+  #redesUno {
+    font-size: 20px; }
+  #redesDos {
+    font-size: 25px; }
+  #redesTres, #redesCuatro {
+    font-size: 13px;
+    line-height: 18px; } }
 
 /* img deco index */
 .imgDeco {
@@ -485,7 +715,8 @@ footer {
     text-align: center;
     padding-top: 3%;
     padding-right: 0%;
-    justify-content: center; } }
+    justify-content: center;
+    font-size: 12px; } }
 
 /* PESTAÑA CONTACTO */
 #contacto {
@@ -555,3 +786,172 @@ footer {
   padding-top: 42px;
   padding-left: 6%;
   background-color: #0a1a36; }
+
+/* CLIENTES */
+#clientes, #clientesOt {
+  background-color: #eeeeee;
+  padding-bottom: 3%;
+  padding-top: 3%; }
+  #clientes h1, #clientesOt h1 {
+    color: #0a1a36;
+    padding-bottom: 2%; }
+
+#clientesOt {
+  background-color: white; }
+
+.slick-slide {
+  margin: 0px 10px; }
+  .slick-slide img {
+    width: 100%; }
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+.slick-list:focus {
+  outline: none; }
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block; }
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: ''; }
+
+.slick-track:after {
+  clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+  [dir='rtl'] .slick-slide img {
+    display: block; }
+
+.slick-slide.slick-loading img {
+  display: none; }
+
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* ERROR */
+.HomeE {
+  padding-top: 3%; }
+
+* {
+  box-sizing: border-box; }
+
+.errores {
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Fascinate', cursive;
+  background: #eeeeee;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 4rem; }
+  .errores span {
+    margin: -2rem 0;
+    color: #0a1a36;
+    align-self: center;
+    font-size: 34rem;
+    letter-spacing: -1rem;
+    transition: font-size .3s ease;
+    text-shadow: 0px 0px 0 #FFAC78, -1px 1px 0 #FFAC78, -2px 2px 0 #FFAC78, -3px 3px 0 #FFAC78, -4px 4px 0 #FFAC78, -5px 5px 0 #FFAC78, -6px 6px 0 #FFAC78, -7px 7px 0 #FFE2A8, -8px 8px 0 #FFE2A8, -9px 9px 0 #FFE2A8, -10px 10px 0 #FFE2A8, -11px 11px 0 #FFE2A8, -12px 12px 0 #FFE2A8, -13px 13px 0 #FFE2A8, -14px 14px 0 #FFE2A8, -15px 15px 0 #FFE2A8, -16px 16px 0 #FFE2A8, -17px 17px 0 rgba(0, 0, 0, 0.19), 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.25), 0 3px 5px rgba(0, 0, 0, 0.28), 0 5px 10px rgba(0, 0, 0, 0.35), 0 10px 15px rgba(0, 0, 0, 0.4), 0 20px 20px rgba(0, 0, 0, 0.45); }
+    .errores span.one {
+      transform: rotate(-26deg); }
+    .errores span.two {
+      color: #3a5583;
+      font-size: 36rem; }
+    .errores span.mid {
+      color: #3a5583;
+      font-size: 6rem;
+      margin-left: -7rem;
+      margin-top: 16rem;
+      z-index: 3;
+      letter-spacing: -6px; }
+    .errores span.three {
+      transform: rotate(26deg);
+      margin-left: -5rem;
+      margin-top: -8rem; }
+
+@media (min-width: 40.6875em) and (max-width: 51.875em) {
+  .errores span {
+    font-size: 28rem; }
+    .errores span.two, .errores span.three {
+      font-size: 30rem; } }
+
+@media (min-width: 30.0625em) and (max-width: 40.625em) {
+  .errores span {
+    font-size: 22rem; }
+    .errores span.two, .errores span.three {
+      font-size: 24rem; } }
+
+@media (max-width: 30em) {
+  .errores span {
+    align-self: center;
+    font-size: 18rem; }
+    .errores span.two {
+      font-size: 20rem; }
+    .errores span.mid {
+      margin-top: 11rem;
+      margin-left: -5rem; }
+    .errores span.three {
+      margin-left: -7rem; } }
